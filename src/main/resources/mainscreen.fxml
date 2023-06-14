@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Import JavaFX controls -->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<!--Root element of FXML file -->
+
+<AnchorPane prefHeight="461.0" prefWidth="1085.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.software1.project1.controller.MainScreenController">
+   <children>
+      <!-- First child AnchorPane -->
+      <AnchorPane layoutX="10.0" layoutY="90.0" prefHeight="260.0" prefWidth="450.0" style="-fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 10;">
+         <children>
+            <!-- TableView for parts -->
+            <TableView fx:id="partTableView" layoutX="41.0" layoutY="49.0" prefHeight="155.0" prefWidth="412.0" style="-fx-border-color: black; -fx-border-width: 1;">
+               <columns>
+                  <!-- TableColumn elements -->
+                  <TableColumn fx:id="partIdCol" prefWidth="75.0" text="Part ID" />
+                  <TableColumn fx:id="partNameCol" prefWidth="75.0" text="Part Name" />
+                  <TableColumn fx:id="partInventoryLevelCol" prefWidth="102.22994995117188" text="Inventory Level" />
+                  <TableColumn fx:id="partPriceCol" prefWidth="135.25137329101562" text="Price/ Cost per Unit" />
+               </columns>
+            </TableView>
+            <!--Hbox containing Buttons -->
+            <HBox alignment="CENTER" layoutX="285.0" layoutY="214.0" prefHeight="29.0" prefWidth="179.0" spacing="10.0">
+               <children>
+                  <!-- Buttons to add, modify and delete parts -->
+                  <Button fx:id="addPartBtn" mnemonicParsing="false" onAction="#onActionAddPart" text="Add" />
+                  <Button fx:id="modifyPartBtn" mnemonicParsing="false" onAction="#onActionModifyPart" text="Modify" />
+                  <Button fx:id="deletePartBtn" mnemonicParsing="false" onAction="#onActionDeletePart" text="Delete" />
+               </children>
+            </HBox>
+            <!-- Label for the parts TableView -->
+            <Label fx:id="partsLbl" layoutX="46.0" layoutY="29.0" text="Parts" />
+            <TextField fx:id="partSearchTxt" layoutX="285.0" layoutY="17.0" promptText="Search by Part ID or Name" />
+         </children>
+      </AnchorPane>
+      <!--Label for the main application -->
+      <Label fx:id="inventoryManagementSystemBtn" layoutX="29.0" layoutY="42.0" text="Inventory Management System">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <!-- Exit button for application -->
+      <Button fx:id="exitBtn" layoutX="944.0" layoutY="385.0" mnemonicParsing="false" onAction="#onActionExit" text="Exit" />
+      <!-- Second child Anchorpane -->
+      <AnchorPane layoutX="517.0" layoutY="91.0" prefHeight="260.0" prefWidth="531.0" style="-fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 10;">
+         <children>
+            <!-- TableView for products -->
+            <TableView fx:id="productTableView" layoutX="41.0" layoutY="49.0" prefHeight="155.0" prefWidth="469.0" style="-fx-border-color: black; -fx-border-width: 1;">
+               <columns>
+                  <!-- TableColumn elements -->
+                  <TableColumn fx:id="productIdCol" prefWidth="75.0" text="Product ID" />
+                  <TableColumn fx:id="productNameCol" prefWidth="218.6827392578125" text="Product Name" />
+                  <TableColumn fx:id="productInventoryLevelCol" prefWidth="77.3172607421875" text="Inventory Level" />
+                  <TableColumn fx:id="productPriceCol" prefWidth="94.8289794921875" text="Price/ Cost per Unit" />
+               </columns>
+            </TableView>
+            <!-- Hbox containing buttons -->
+            <HBox alignment="CENTER" layoutX="285.0" layoutY="214.0" prefHeight="29.0" prefWidth="179.0" spacing="10.0">
+               <children>
+                  <Button fx:id="addProductBtn1" mnemonicParsing="false" onAction="#onActionAddProduct" text="Add" />
+                  <Button fx:id="modifyProdcutBtn1" mnemonicParsing="false" onAction="#onActionModifyProduct" text="Modify" />
+                  <Button fx:id="deleteProductBtn1" mnemonicParsing="false" onAction="#onActionDeleteProduct" text="Delete" />
+               </children>
+            </HBox>
+            <!--Label for products TableView -->
+            <Label fx:id="productLbl1" layoutX="46.0" layoutY="29.0" text="Products" />
+            <TextField fx:id="productSearchTxt" layoutX="285.0" layoutY="17.0" promptText="Search by Product ID or Name" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
