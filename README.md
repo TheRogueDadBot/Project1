@@ -1,25 +1,85 @@
-ManufacturaInventoryPro
+Inventory Management System
 
 Description
 
-ManufacturaInventoryPro is a sophisticated inventory management system designed for small to medium-sized manufacturing organizations. This application aims to replace traditional spreadsheet-based methods with a more efficient, user-friendly, and automated approach. It supports inventory additions, deletions, and tracking, streamlining the inventory management process in a manufacturing environment.
+The Inventory Management System is a comprehensive JavaFX application designed for efficiently managing parts and products within an inventory. This project demonstrates a robust understanding of JavaFX components and MVC architecture, showcasing skills in building user-friendly desktop applications.
+
 
 Features
 
-Automated Inventory Tracking: Automates the process of tracking inventory additions and deletions.
-User-Friendly Interface: Offers an intuitive GUI, based on the provided mock-ups, for ease of use.
-Data Accuracy: Ensures higher accuracy in inventory data management.
+Inventory Management: Add, modify, and delete parts and products in the inventory.
 
-Reporting Tools: Generates comprehensive reports for inventory analysis.
-Customizable Settings: Allows customization to suit specific organizational needs.
+Part Categorization: Distinguish between in-house and outsourced parts.
+
+Search Functionality: Easily search for parts and products using ID or name.
+
+User-Friendly Interface: Developed using JavaFX for an intuitive user experience.
+
+Error Handling: Robust input validation and error handling mechanisms.
+
 
 Installation
 
-Instructions for installing ManufacturaInventoryPro:
+Prerequisites:
 
-Download the latest release from the GitHub repository.
-Unzip the downloaded file to your desired location.
-Run the installer and follow the on-screen instructions.
-Usage
+Java JDK 11 or higher
 
-Once installed, you can start the application and log in using the provided credentials. The main dashboard will display an overview of your current inventory status. For detailed instructions, refer to the user manual in the docs folder.
+JavaFX SDK
+
+Setting Up:
+
+Clone the repository: git clone github.com/TheRogueDadBot/SmartStockManager.git
+
+Navigate to the project directory: cd inventory-management-system
+
+Running the Application:
+
+Compile the source code: javac -module-path /path/to/javafx-sdk-11/lib --add-modules javafx.controls,javafx.fxml -d out src/com/software1/project1/*.java
+
+Run the application: java --module-path /path/to/javafx-sdk-11/lib --add-modules javafx.controls,javafx.fxml -cp out com.software1.project1.project1
+
+User Guide
+
+Main Screen
+
+Add Part/Product: Click Add to create a new part or product.
+
+Modify Part/Product: Select an item and click Modify to edit.
+
+Delete Part/Product: Select an item and click Delete to remove it from inventory.
+
+Search: Use the search bar to find parts/products by ID or name.
+
+Adding/Modifying Parts
+
+Enter part details such as name, price, inventory level.
+
+Choose between In-House (requires Machine ID) and Outsourced (requires Company Name).
+
+Click Save to update the inventory.
+
+Adding/Modifying Products
+
+Enter product details and set minimum/maximum inventory levels.
+
+Add parts to the product from the part list.
+
+Click Save to update the inventory.
+
+
+Future Enhancements
+
+Inventory Alerts: Notify when inventory falls below a set threshold.
+
+Supplier Management: Track parts from different suppliers for better inventory management.
+
+
+Contributing
+
+Contributions, issues, and feature requests are welcome. Feel free to check issues page for open issues or submit new ones.
+
+Contact
+
+Your Name – ericjohnjacobs@gmail.com
+
+Project Link: github.com/TheRogueDadBot/SmartStockManager
