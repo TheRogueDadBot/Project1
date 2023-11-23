@@ -80,6 +80,6 @@ Contributions, issues, and feature requests are welcome. Feel free to check issu
 
 Contact
 
-Your Name – ericjohnjacobs@gmail.com
+Eric Jacobs – ericjohnjacobs@gmail.com
 
 Project Link: github.com/TheRogueDadBot/SmartStockManager
