@@ -1,85 +1,82 @@
-Inventory Management System
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inventory Management System</title>
+<style>
+  body { font-family: Arial, sans-serif; }
+  h1 { color: #333; }
+  h2 { color: #666; }
+  ul { list-style-type: none; }
+  li { margin-bottom: 10px; }
+  .feature, .section { margin-bottom: 20px; }
+  .code { background-color: #f4f4f4; padding: 10px; }
+</style>
+</head>
+<body>
 
-Description
+<h1>Inventory Management System</h1>
+<p><strong>Description:</strong> A comprehensive JavaFX application designed for efficient inventory management. Showcases expertise in JavaFX and MVC architecture for user-friendly desktop applications.</p>
 
-The Inventory Management System is a comprehensive JavaFX application designed for efficiently managing parts and products within an inventory. This project demonstrates a robust understanding of JavaFX components and MVC architecture, showcasing skills in building user-friendly desktop applications.
+<div class="feature">
+  <h2>Features</h2>
+  <ul>
+    <li><strong>Inventory Management:</strong> Add, modify, and delete parts and products.</li>
+    <li><strong>Part Categorization:</strong> Differentiate between in-house and outsourced parts.</li>
+    <li><strong>Search Functionality:</strong> Search parts/products by ID or name.</li>
+    <li><strong>User-Friendly Interface:</strong> Intuitive user experience with JavaFX.</li>
+    <li><strong>Error Handling:</strong> Robust validation and error handling.</li>
+  </ul>
+</div>
 
+<div class="section">
+  <h2>Installation</h2>
+  <h3>Prerequisites:</h3>
+  <p>Java JDK 11 or higher, JavaFX SDK</p>
 
-Features
+  <h3>Setting Up:</h3>
+  <p class="code">git clone github.com/TheRogueDadBot/SmartStockManager.git<br>
+  cd inventory-management-system</p>
 
-Inventory Management: Add, modify, and delete parts and products in the inventory.
+  <h3>Running the Application:</h3>
+  <p class="code">javac -module-path /path/to/javafx-sdk-11/lib --add-modules javafx.controls,javafx.fxml -d out src/com/software1/project1/*.java<br>
+  java --module-path /path/to/javafx-sdk-11/lib --add-modules javafx.controls,javafx.fxml -cp out com.software1.project1.project1</p>
+</div>
 
-Part Categorization: Distinguish between in-house and outsourced parts.
+<div class="section">
+  <h2>User Guide</h2>
+  <h3>Main Screen:</h3>
+  <ul>
+    <li><strong>Add Part/Product:</strong> Click Add to create new items.</li>
+    <li><strong>Modify Part/Product:</strong> Select and click Modify to edit.</li>
+    <li><strong>Delete Part/Product:</strong> Select and click Delete to remove.</li>
+    <li><strong>Search:</strong> Find items using the search bar.</li>
+  </ul>
 
-Search Functionality: Easily search for parts and products using ID or name.
+  <h3>Adding/Modifying Parts:</h3>
+  <p>Enter part details and choose category (In-House or Outsourced).</p>
 
-User-Friendly Interface: Developed using JavaFX for an intuitive user experience.
+  <h3>Adding/Modifying Products:</h3>
+  <p>Enter product details, manage inventory levels, and associate parts.</p>
+</div>
 
-Error Handling: Robust input validation and error handling mechanisms.
+<div class="section">
+  <h2>Future Enhancements</h2>
+  <ul>
+    <li><strong>Inventory Alerts:</strong> Notifications for low inventory levels.</li>
+    <li><strong>Supplier Management:</strong> Manage parts from various suppliers.</li>
+  </ul>
+</div>
 
+<div class="section">
+  <h2>Contributing</h2>
+  <p>Feel free to contribute! Check the issues page for open items or submit new ones.</p>
+</div>
 
-Installation
+<div class="section">
+  <h2>Contact</h2>
+  <p>Eric Jacobs - <a href="mailto:ericjohnjacobs@gmail.com">ericjohnjacobs@gmail.com</a></p>
+  <p>Project Link: <a href="https://github.com/TheRogueDadBot/SmartStockManager">github.com/TheRogueDadBot/SmartStockManager</a></p>
+</div>
 
-Prerequisites:
-
-Java JDK 11 or higher
-
-JavaFX SDK
-
-Setting Up:
-
-Clone the repository: git clone github.com/TheRogueDadBot/SmartStockManager.git
-
-Navigate to the project directory: cd inventory-management-system
-
-Running the Application:
-
-Compile the source code: javac -module-path /path/to/javafx-sdk-11/lib --add-modules javafx.controls,javafx.fxml -d out src/com/software1/project1/*.java
-
-Run the application: java --module-path /path/to/javafx-sdk-11/lib --add-modules javafx.controls,javafx.fxml -cp out com.software1.project1.project1
-
-User Guide
-
-Main Screen
-
-Add Part/Product: Click Add to create a new part or product.
-
-Modify Part/Product: Select an item and click Modify to edit.
-
-Delete Part/Product: Select an item and click Delete to remove it from inventory.
-
-Search: Use the search bar to find parts/products by ID or name.
-
-Adding/Modifying Parts
-
-Enter part details such as name, price, inventory level.
-
-Choose between In-House (requires Machine ID) and Outsourced (requires Company Name).
-
-Click Save to update the inventory.
-
-Adding/Modifying Products
-
-Enter product details and set minimum/maximum inventory levels.
-
-Add parts to the product from the part list.
-
-Click Save to update the inventory.
-
-
-Future Enhancements
-
-Inventory Alerts: Notify when inventory falls below a set threshold.
-
-Supplier Management: Track parts from different suppliers for better inventory management.
-
-
-Contributing
-
-Contributions, issues, and feature requests are welcome. Feel free to check issues page for open issues or submit new ones.
-
-Contact
-
-Eric Jacobs – ericjohnjacobs@gmail.com
-
-Project Link: github.com/TheRogueDadBot/SmartStockManager
+</body>
+</html>
