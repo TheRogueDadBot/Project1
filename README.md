@@ -10,6 +10,9 @@
 - **User-Friendly Interface**: Intuitive user experience with JavaFX.
 - **Error Handling**: Robust validation and error handling.
 
+  <img src="images/Screenshot3.png" alt="Screenshot3" width="375"/> <img src="images/Screenshot4.png" alt="Screenshot4" width="375"/>
+  <img src="images/Screenshot2.png" alt="Screenshot2" width="375"/> <img src="images/Screenshot1.png" alt="Screenshot1" width="375"/>
+
 ## Installation
 
 **Prerequisites**:
